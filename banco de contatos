@@ -1,0 +1,97 @@
+CREATE TABLE contatos (nome VARCHAR (250),
+email VARCHAR (100));
+
+ALTER TABLE contatos ADD numero VARCHAR (25);
+
+ALTER TABLE contatos ADD grupo VARCHAR (25);
+
+
+INSERT INTO contatos (nome,email,numero,grupo) VALUES
+('Felipe','luiz.felipe.mazer@outlook.com','16988593816','facul');
+
+ALTER TABLE contatos RENAME COLUMN email TO e_mail;
+
+
+INSERT INTO contatos
+ (nome,e_mail,numero,grupo) VALUES
+ ('bela','bela@hotmail.com','16984637594','facul'),
+ ('rafael','rafael@hotmail.com','169883654738','trabalho'),
+ ('thais','thais@hotmail.com','167748839945','facul'),
+ ('nando','nando@hotmail.com','16873402764','empresa'),
+ ('jose','jose@hotmail.com','169834627348','jardineiro'),
+ ('flavia','flavia@hotmail.com','16982365479','trabalho'),
+ ('ana','ana@hotmail.com','16984376457','facul'),
+ ('julia','ju@hotmail.com','16988936673','facul'),
+ ('lorena','lo@hotmail.com','16988735627','facul'),
+ ('giovanna','giovanna@hotmail.com','16987743567','facul'),
+ ('cleide','cleide@hotmail.com','16963662369','trabalho'),
+ ('jorlan','jorlan@hotmail.com','169885677544','trabalho'),
+ ('renato','renato@hotmail.com','169887223744','empresa'),
+ ('ricardo','ricardo@hotmail.com','1198466372','encanador'),
+ ('lais','lais@hotmail.com','16983367854','meretriz'),
+ ('gabi','gabi@hotmail.com','16997865424','facul'),
+ ('mauricio','mauricio@hotmail.com','169884737321','facul'),
+ ('myke tyson','myke@hottmail.com','169883044023','treinador'),
+ ('marcelo','marcelo@hotmail.com','169887704531','facul'),
+ ('melina','melina@hotmail.com','167743133889','facul'),
+ ('mario','mario@hotmail.com','16997442345','barbeiro'),
+ ('jonas','jonas@hotmail.com','16993221445','instrutor'),
+ ('matheus','matheus@hotmail.com','169925576712','facul'),
+ ('jorge','jorge@hotmail.com','169974336541','facul'),
+ ('lilian','lilian@hotmail.com','1697763155','facul'),
+ ('laura','laura@hotmail.com','169884663134','trabalho'),
+ ('fabricio','fabricio@hotmail.com','16997335741','facul'),
+ ('marcela','marcela@hotmail.com','169994324512','facul'),
+ ('duda','duda@hotmail.com','169774388212','academia'),
+ ('joao','joao@hotmail.com','169947761622','trabalho'),
+ ('alberto','alberto@hotmail.com','169932317655','facul'),
+ ('conor','conor@hotmail.com','169910045233','facul'),
+ ('eduardo','eduardo@hotmail.com','16944583134','facul'),
+ ('lucke','lucke@hotmail.com','169884375133','facul'),
+ ('andre','andre@hotmail.com','169447689341','facul'),
+ ('leandro','leandro@hotmail.com','16933458212','facul'),
+ ('marcos','marcos@hotmail.com','169993133562','eletricista'),
+ ('luiz','luiz@htomail.com','16988574817','treinador'),
+ ('carlos','carlos@hotmail.com','169774521345','trabalho'),
+ ('anderson','anderson@hotmail.com','16993411746','facul'),
+ ('diego','diego@hotmail.com','169904134233','facul'),
+ ('brandao','brandao@hotmail.com','16995355621','facul'),
+ ('dustin','justin@hotmail.com','16932285512','facul'),
+ ('aldo','aldo@hotmail.com','1691173445632','facul'),
+ ('mike','mike@hotmail.com','169441932421','facul'),
+ ('daniel','daniel@hotmail.com','16994311479','trabalho'),
+ ('albert','albert@hotmail.com','16944583821','trabalho'),
+ ('mendes','mendes@hotmail.com','16944813845','facul'),
+ ('george','george@hotmail.com','16283847424','academia'),
+ ('henrique','henrique@hotmail.com','16993572714','facul');
+
+  SELECT nome, grupo FROM contatos;
+
+  SELECT e_mail, numero FROM contatos;
+
+  SELECT nome FROM contatos;
+
+  UPDATE contatos SET grupo = 'coach' WHERE nome = 'lais';
+
+  UPDATE contatos SET numero = '16998457224' WHERE nome = 'felipe';
+
+  UPDATE contatos SET e_mail = 'jorlan@hotmail.com.br' WHERE nome = 'jorlan';
+
+  UPDATE contatos SET nome = 'luis' WHERE nome = 'luiz';
+
+  UPDATE contatos SET e_mail = 'lorena@hotmail.com' WHERE nome = 'lorena';
+
+  UPDATE contatos SET e_mail = 'marcela@hotmail.com.br' WHERE nome = 'marcela';
+
+  UPDATE contatos SET numero = '169045538821' WHERE nome = 'renato';
+
+  UPDATE contatos SET nome = 'gabriela' WHERE nome = 'gabi';
+  
+  UPDATE contatos SET nome = 'fernando' WHERE nome = 'nando';
+
+  UPDATE contatos SET e_mail = 'julia@hotmail.com' WHERE nome = 'julia';
+
+  DELETE FROM contatos WHERE nome = 'jose'  
+
+  DELETE FROM contatos WHERE nome = 'mauricio'
+
