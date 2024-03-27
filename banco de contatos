@@ -7,7 +7,7 @@ ALTER TABLE contatos ADD grupo VARCHAR (25);
 
 
 INSERT INTO contatos (nome,email,numero,grupo) VALUES
-('Felipe','luiz.felipe.mazer@outlook.com','16988593816','facul');
+('Felipe','luiz.felipe.mazer@outlook.com','16988593800','facul');
 
 ALTER TABLE contatos RENAME COLUMN email TO e_mail;
 
